@@ -1,0 +1,278 @@
+/* Estilos específicos para la página de bares populares */
+
+.bars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.bar-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.bar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #1e3c72, #ffd700);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.bar-card:hover::before {
+    transform: scaleX(1);
+}
+
+.bar-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(30, 60, 114, 0.2);
+}
+
+.bar-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.bar-card:hover .bar-img {
+    transform: scale(1.1);
+}
+
+.bar-content {
+    padding: 2rem;
+}
+
+.bar-content h3 {
+    color: #1e3c72;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.bar-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bar-rating i {
+    color: #ffd700;
+}
+
+.bar-rating span {
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.bar-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.bar-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.bar-features span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #1e3c72;
+    font-weight: 500;
+}
+
+.bar-features i {
+    color: #ffd700;
+}
+
+.bar-schedule {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.bar-schedule i {
+    color: #1e3c72;
+    font-size: 1.1rem;
+}
+
+.bar-schedule span {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.bar-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+}
+
+.bar-location i {
+    color: #1e3c72;
+    font-size: 1.1rem;
+}
+
+.bar-location span {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.bars-info {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin: 4rem 0 2rem;
+    text-align: center;
+    color: white;
+}
+
+.bars-info h3 {
+    color: #ffd700;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.info-item i {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.info-item h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #1e3c72;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+}
+
+.back-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+}
+
+/* Efectos especiales para bares */
+.bar-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(30, 60, 114, 0.1), rgba(255, 215, 0, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.bar-card:hover::after {
+    opacity: 1;
+}
+
+/* Responsive para la página de bares */
+@media (max-width: 768px) {
+    .bars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bar-content {
+        padding: 1.5rem;
+    }
+
+    .bar-features {
+        gap: 0.5rem;
+    }
+
+    .bar-features span {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .bars-info {
+        padding: 2rem 1rem;
+        margin: 3rem 0 1rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animaciones específicas para bares */
+@keyframes barGlow {
+    0%, 100% { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    50% { box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3); }
+}
+
+.bar-card:hover {
+    animation: barGlow 2s ease-in-out infinite;
+}

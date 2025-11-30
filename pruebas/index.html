@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Quevedo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/Principal.css">
+</head>
+<body>
+<!-- Cabecera con navegación -->
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <i class="fas fa-mountain"></i>
+            <h2>Quevedo Turismo</h2>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#lugares"><i class="fas fa-map-marked-alt"></i> Lugares</a></li>
+
+            <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sección de Inicio -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Bienvenidos a Quevedo</h1>
+        <p>Descubre la belleza y cultura de nuestra ciudad</p>
+        <a href="#lugares" class="hero-btn">Explorar Ahora</a>
+    </div>
+</section>
+
+<!-- Sección de Lugares Turísticos -->
+<section id="lugares" class="section">
+    <h2 class="section-title">Lugares Turísticos</h2>
+    <p class="section-subtitle">Descubre los rincones más hermosos de Quevedo</p>
+    <div class="cards-container">
+        <!-- En la card de Sitios Comerciales, agrega el botón: -->
+        <div class="card">
+            <i class="fas fa-cart-shopping card-icon"></i>
+            <div class="card-content">
+                <h3>Sitios Comerciales</h3>
+                <p>Tu destino ideal de compras. Recorre las principales avenidas y centros comerciales de Quevedo para disfrutar de las mejores ofertas y tendencias.</p>
+                <!-- Agrega este enlace: -->
+                <a href="Comercial.html" class="hero-btn" style="margin-top: 15px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Ver Centros Comerciales</a>
+            </div>
+        </div>
+        <!-- En la card de Alojamiento, agrega el botón: -->
+        <div class="card">
+            <i class="fas fa-solid fa-bed card-icon"></i>
+            <div class="card-content">
+                <h3>Alojamiento</h3>
+                <p>Siéntete como en casa en Quevedo. Descubre una amplia oferta hotelera que combina excelente servicio, seguridad y el mejor descanso.</p>
+                <!-- Agrega este enlace: -->
+                <a href="alojamiento.html" class="hero-btn" style="margin-top: 15px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Ver Hoteles</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <i class="fas fa-utensils card-icon"></i>
+            <div class="card-content">
+                <h3>Gastronomía Típica</h3>
+                <p>Descubre los sabores auténticos de Ecuador. Explora nuestra rica tradición culinaria con platos típicos que representan la esencia de nuestra cultura.</p>
+                <!-- Agrega este enlace: -->
+                <a href="Gastronomia.html" class="hero-btn" style="margin-top: 15px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Ver Platos Típicos</a>
+            </div>
+        </div>
+        <!-- En la card de Centros de Comida, agrega el botón: -->
+        <div class="card">
+            <i class="fas fa-utensils card-icon"></i>
+            <div class="card-content">
+                <h3>Restaurantes</h3>
+                <p>Una experiencia culinaria para todos los gustos. Explora una gran variedad de restaurantes, cafeterías, asaderos y patios de comida en la ciudad.</p>
+                <!-- Agrega este enlace: -->
+                <a href="restaurantes.html" class="hero-btn" style="margin-top: 15px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Ver Restaurantes</a>
+            </div>
+        </div>
+
+        <!-- En la card de Bares, agrega el botón: -->
+        <div class="card">
+            <i class="fas fa-martini-glass-citrus card-icon"></i>
+            <div class="card-content">
+                <h3>Bares</h3>
+                <p>El ambiente perfecto para tu noche. Disfruta de una amplia variedad de cócteles, música en vivo y los lugares más populares para socializar en la ciudad.</p>
+                <!-- Agrega este enlace: -->
+                <a href="BARES.html" class="hero-btn" style="margin-top: 15px; display: inline-block; padding: 10px 25px; font-size: 0.9rem;">Ver Bares Populares</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer id="contacto" class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3><i class="fas fa-info-circle"></i> Contacto</h3>
+            <p><i class="fas fa-envelope"></i> kennyvera43@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +593 983 187 219</p>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fas fa-share-alt"></i> Síguenos</h3>
+            <p><i class="fab fa-facebook"></i> Facebook</p>
+            <p><i class="fab fa-instagram"></i> Instagram</p>
+            <p><i class="fab fa-twitter"></i> Twitter</p>
+        </div>
+        <div class="footer-section">
+            <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+            <p>Quevedo, Los Ríos</p>
+            <p>Ecuador</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Turismo Quevedo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Botón scroll to top -->
+<div class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
